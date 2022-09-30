@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container h1{
+    margin: 10px 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 35px;
+}
+.container h1 span{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container input{
+    outline: none;
+    border: 2px solid white;
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 12px 0;
+    max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 8px 12px;
+}
+
+.container button{
+    outline: none;
+    border: none;
+    background-color: #920b97ad;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.container p{
+    margin: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+
+#msgBox p{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 8px 0;
+    color: white;
+    background-color: rgb(44 44 44);
+    animation: animAlert 3s linear;
+}
+
+@keyframes animAlert {
+    0%{
+        bottom: -100px;
+    }
+    15%{
+        bottom: 0px;
+    }
+    85%{
+        bottom: 0px;
+    }
+    100%{
+        bottom: -100px;
+    }
+}
+
+.wonDiv{
+    text-align: center;
+    color: white;
+    display: none;
+    flex-direction: column;
+}
+
+.wonDiv img{
+    height: 220px;
+}
+
+.wonDiv p{
+    font-size: 20px;
+    margin: 8px 0;
+}

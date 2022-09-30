@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Number Game <br> <span>The Javascript Game</span></h1>
+        <input type="text" id="numberInput" placeholder="Enter a Number between 1 - 100" autofocus>
+        <div class="wonDiv">
+            <img src="./sources/doge-dog.gif" alt="Dancing GIF">
+            <p>Congratulations! You Won</p>
+        </div>
+        <p>Chance Taken - <span id="chanceTaken">0</span></p>
+        <button id="submitNumberBtn">Submit</button>
+    </div>
+    <div id="msgBox">
+        <p>Let's Begin</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

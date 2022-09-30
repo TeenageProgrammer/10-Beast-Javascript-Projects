@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #009fff;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    filter: contrast(1.5);
+    animation: animCircle 7s linear;
+}
+
+@keyframes animCircle {
+    0%{
+        width: 0px;
+        height: 0px;
+        background-color: #d4d4d4;
+        opacity: 1;
+    }
+    100%{
+        width: 1500px;
+        height: 1500px;
+        background-color: white;
+        opacity: 0;
+    }
+}

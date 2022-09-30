@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins';
+}
+
+.gameContainer {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameBoard{
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    background-color: antiquewhite;
+}
+
+
+.food{
+    background-color: #2b6bff;
+    border-radius: 50%;
+}
+
+.snake{
+    background-color: rgb(245, 53, 53);
+}
+
+.head{
+    z-index: 12;
+    background-color: #d20a1e;
+}
+
+#score{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+}
+
+#highScore{
+    position: absolute;
+    top: 40px;
+    color: white;
+    left: 20px;
+}
